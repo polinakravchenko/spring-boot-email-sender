@@ -28,8 +28,8 @@ public class EmailController {
         try {
         SimpleMailMessage message = new SimpleMailMessage();
 
-        message.setFrom("polliname20@gmail.com");
-        message.setTo("polliname20@gmail.com");
+        message.setFrom("examplemail@gmail.com");
+        message.setTo("examplemail@gmail.com");
         message.setSubject("Simple text email from Polina");
         message.setText("This is a simple email body for my first email!");
 
@@ -46,8 +46,8 @@ public class EmailController {
             MimeMessage message = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
-            helper.setFrom("polliname20@gmail.com");
-            //helper.setTo("polliname20@gmail.com");
+            helper.setFrom("examplemail@gmail.com");
+            //helper.setTo("examplemail0@gmail.com");
 
             String[] recipients = {"polliname20@gmail.com", "kravpolija@gmail.com"};
             helper.setTo(recipients);
@@ -71,8 +71,8 @@ public class EmailController {
                  MimeMessage message = mailSender.createMimeMessage();
                  MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
-                 helper.setFrom("polliname20@gmail.com");
-                 helper.setTo("polliname20@gmail.com");
+                 helper.setFrom("examplemail@gmail.com");
+                 helper.setTo("examplemail@gmail.com");
                  helper.setSubject("Java email with attachment | From Polina");
 
                  try (var inputStream = Objects.requireNonNull(EmailController.class.getResourceAsStream("/templates/email-content.html"))) {
