@@ -47,9 +47,9 @@ public class EmailController {
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
             helper.setFrom("examplemail@gmail.com");
-            //helper.setTo("examplemail0@gmail.com");
+            //helper.setTo("examplemail@gmail.com");
 
-            String[] recipients = {"polliname20@gmail.com", "kravpolija@gmail.com"};
+            String[] recipients = {"examplemail@gmail.com", "examplemail@gmail.com"};
             helper.setTo(recipients);
 
             helper.setSubject("Java email with attachment | From Polina");
